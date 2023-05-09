@@ -3,3 +3,8 @@ spring:
     url: jdbc:mysql://localhost:5888/mall_pms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     username: root
     password: lee
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initial-size: 2
+      max-active: 5
+      max-wait: 1000
