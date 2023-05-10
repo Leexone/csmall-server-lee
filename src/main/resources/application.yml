@@ -4,9 +4,17 @@ spring:
     username: root
     password: lee
     type: com.alibaba.druid.pool.DruidDataSource
+
     druid:
       initial-size: 2
       max-active: 5
       max-wait: 1000
+
 mybatis:
   mapper-locations: classpath:mappers/*.xml
+
+knife4j:
+  basic:
+    enable: true
+    username: lee
+    password: lee

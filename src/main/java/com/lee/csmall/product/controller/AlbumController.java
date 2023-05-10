@@ -20,7 +20,6 @@ public class AlbumController {
     private final IAlbumService iAlbumService;
 
 
-
     /**
      * resolve addAlbum*/
     @RequestMapping("addAlbum")

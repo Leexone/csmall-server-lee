@@ -6,8 +6,8 @@ import com.lee.csmall.product.ex.ServiceException;
 import com.lee.csmall.product.pojo.entity.Album;
 import com.lee.csmall.product.pojo.param.AlbumAddNewParam;
 import com.lee.csmall.product.service.IAlbumService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -19,12 +19,9 @@ import java.time.LocalDateTime;
  * handle alblum services
  */
 @Service
+@RequiredArgsConstructor
 public class AlbumServiceImpl implements IAlbumService {
     final AlbumMapper albumMapper;
-
-    public AlbumServiceImpl(AlbumMapper albumMapper) {
-        this.albumMapper = albumMapper;
-    }
 
 
     /**
