@@ -30,7 +30,6 @@ public class AlbumServiceImpl implements IAlbumService {
     public void addNew(AlbumAddNewParam albumAddNewParam) {
         QueryWrapper<Album> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("name", albumAddNewParam.getName());
-
         int countByName = albumMapper.selectCount(queryWrapper);
         if (countByName > 0) {
             throw  new ServiceException("album name exist");

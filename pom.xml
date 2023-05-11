@@ -39,6 +39,12 @@
             <scope>test</scope>
         </dependency>
 
+        <!--springboot validation -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+
         <!--mysql connector-->
         <dependency>
             <groupId>mysql</groupId>
@@ -52,11 +58,11 @@
 
         </dependency>
 
-        <!-- druid pool-->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
-        </dependency>
+<!--        &lt;!&ndash; druid pool&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba</groupId>-->
+<!--            <artifactId>druid-spring-boot-starter</artifactId>-->
+<!--        </dependency>-->
 
         <!--mybatis plus-->
         <dependency>

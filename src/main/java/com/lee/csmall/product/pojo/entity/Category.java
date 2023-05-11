@@ -11,16 +11,23 @@ import java.time.LocalDateTime;
 /**
  * @author lee
  * 我亦无他,唯手熟尔
+ * category persistent
  */
 @Data
-@TableName("pms_album")
-public class Album implements Serializable {
-    private static final long serialVersionUID =5L;
+@TableName("pms_category")
+public class Category implements Serializable {
+    private static final long serialVersionUID =8L;
     @TableId(type = IdType.AUTO)
     private Long id;
     private String name;
-    private String description;
+    private Long parentId;
+    private Integer depth;
+    private String keywords;
     private Integer sort;
+    private String icon;
+    private Integer enable;
+    private Integer isParent;
+    private Integer isDisplay;
     private LocalDateTime gmtCreate;
     private LocalDateTime gmtModified;
 }

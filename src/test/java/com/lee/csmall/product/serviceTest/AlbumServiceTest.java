@@ -1,7 +1,8 @@
-package com.lee.csmall.product.service;
+package com.lee.csmall.product.serviceTest;
 
 import com.lee.csmall.product.ex.ServiceException;
 import com.lee.csmall.product.pojo.param.AlbumAddNewParam;
+import com.lee.csmall.product.service.IAlbumService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

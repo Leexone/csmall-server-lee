@@ -13,14 +13,22 @@ import java.time.LocalDateTime;
  * 我亦无他,唯手熟尔
  */
 @Data
-@TableName("pms_album")
-public class Album implements Serializable {
-    private static final long serialVersionUID =5L;
+@TableName("pms_brand")
+public class Brand implements Serializable {
+    private static final long serialVersionUID =12L;
     @TableId(type = IdType.AUTO)
     private Long id;
     private String name;
+    private String pinyin;
+    private String logo;
     private String description;
+    private String keywords;
     private Integer sort;
+    private Integer sales;
+    private Integer productCount;
+    private Integer commentCount;
+    private Integer positiveCommentCount;
+    private Integer enable;
     private LocalDateTime gmtCreate;
     private LocalDateTime gmtModified;
 }

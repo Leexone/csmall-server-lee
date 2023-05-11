@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * @author lee
  * 我亦无他,唯手熟尔
+ * Mybatis Configuation
  */
 @Configuration
 @MapperScan("com.lee.csmall.product.dao.mapper")

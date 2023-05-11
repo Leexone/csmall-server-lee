@@ -1,4 +1,4 @@
-package com.lee.csmall.product.album;
+package com.lee.csmall.product.mapperTests;
 
 import com.lee.csmall.product.dao.mapper.AlbumMapper;
 import com.lee.csmall.product.pojo.entity.Album;

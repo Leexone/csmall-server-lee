@@ -1,7 +1,9 @@
 package com.lee.csmall.product.dao.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.lee.csmall.product.pojo.entity.Album;
+
+
+import com.lee.csmall.product.pojo.entity.Brand;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -10,6 +12,6 @@ import org.springframework.stereotype.Repository;
  * Album mapper
  */
 @Repository
-public interface AlbumMapper  extends BaseMapper<Album> {
+public interface BrandMapper extends BaseMapper<Brand> {
 
 }

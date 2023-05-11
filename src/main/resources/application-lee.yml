@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:5888/mall_pms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: lee
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      minimum-idle: 2
+      idle-timeout: 30000
+      maximum-pool-size: 5
+      max-lifetime: 80000
+      connection-timeout: 15000
+  lifecycle:
+    timeout-per-shutdown-phase: 5s
+
+knife4j:
+  basic:
+    enable: true
+    username: lee
+    password: lee
+logging:
+  level:
+    com.lee.csmall : debug
+  charset:
+    console: UTF-8
+  pattern:
+    dateformat: YYYY-MM-dd
+
+server:
+  port: 8080
+  shutdown: graceful #grace shutdown
